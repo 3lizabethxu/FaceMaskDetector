@@ -1,0 +1,79 @@
+\hypertarget{class_mask_detector}{}\doxysection{Mask\+Detector Class Reference}
+\label{class_mask_detector}\index{MaskDetector@{MaskDetector}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mask_detector_a7d36818ffdae5533b900cbbf33471c74}\label{class_mask_detector_a7d36818ffdae5533b900cbbf33471c74}} 
+{\bfseries Mask\+Detector} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_mask_detector}{Mask\+Detector}} class, required as every instance needs to have a command to execute. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mask_detector_a48426a6408a68e58ca4d4d60a5b064b4}{$\sim$\+Mask\+Detector}} ()
+\begin{DoxyCompactList}\small\item\em destroys \mbox{\hyperlink{class_mask_detector}{Mask\+Detector}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mask_detector_a4fede0b938f4de3aad6bf9ef795c1901}\label{class_mask_detector_a4fede0b938f4de3aad6bf9ef795c1901}} 
+bool {\bfseries has\+Mask} (Mat)
+\begin{DoxyCompactList}\small\item\em Calculates the probabilty that a mask is worn based on the sensitivity which is set by the user. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_mask_detector_a85d3d594c1f1e2eb3e6d4cdf717dca67}{mask\+Probability}} (Mat)
+\begin{DoxyCompactList}\small\item\em Calculates the probability of mask compliance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mask_detector_a6003f8963e4b0830ca3b5ceadea009e6}\label{class_mask_detector_a6003f8963e4b0830ca3b5ceadea009e6}} 
+void {\bfseries set\+Mask\+Sensitivity} (float sensitivity)
+\begin{DoxyCompactList}\small\item\em Allows the user to set the sensitivity (or threshold) of what percentage is needed for mask compiance to be accepted. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mask_detector_a6bd299bd183226d4b9bdf9e9be21133f}\label{class_mask_detector_a6bd299bd183226d4b9bdf9e9be21133f}} 
+float {\bfseries get\+Mask\+Sensitivity} ()
+\begin{DoxyCompactList}\small\item\em Getter method for the current sensitivty set by the user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mask_detector_a1ff5bbe5276b86bc644b8f04136e9c22}\label{class_mask_detector_a1ff5bbe5276b86bc644b8f04136e9c22}} 
+static \mbox{\hyperlink{class_mask_detector}{Mask\+Detector}} $\ast$ {\bfseries get\+Instance} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mask_detector_a71b66c5536df2c6e4cb1738e40efb55e}\label{class_mask_detector_a71b66c5536df2c6e4cb1738e40efb55e}} 
+static \mbox{\hyperlink{class_mask_detector}{Mask\+Detector}} $\ast$ {\bfseries instance} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mask_detector_a8ff5eb75cb6b4a1640ee5c3eca10ab63}\label{class_mask_detector_a8ff5eb75cb6b4a1640ee5c3eca10ab63}} 
+float {\bfseries mask\+Sensitivity}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_mask_detector_a48426a6408a68e58ca4d4d60a5b064b4}\label{class_mask_detector_a48426a6408a68e58ca4d4d60a5b064b4}} 
+\index{MaskDetector@{MaskDetector}!````~MaskDetector@{$\sim$MaskDetector}}
+\index{````~MaskDetector@{$\sim$MaskDetector}!MaskDetector@{MaskDetector}}
+\doxysubsubsection{\texorpdfstring{$\sim$MaskDetector()}{~MaskDetector()}}
+{\footnotesize\ttfamily Mask\+Detector\+::$\sim$\+Mask\+Detector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destroys \mbox{\hyperlink{class_mask_detector}{Mask\+Detector}}. 
+
+this just destroys the \mbox{\hyperlink{class_mask_detector}{Mask\+Detector}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mask_detector_a85d3d594c1f1e2eb3e6d4cdf717dca67}\label{class_mask_detector_a85d3d594c1f1e2eb3e6d4cdf717dca67}} 
+\index{MaskDetector@{MaskDetector}!maskProbability@{maskProbability}}
+\index{maskProbability@{maskProbability}!MaskDetector@{MaskDetector}}
+\doxysubsubsection{\texorpdfstring{maskProbability()}{maskProbability()}}
+{\footnotesize\ttfamily float Mask\+Detector\+::mask\+Probability (\begin{DoxyParamCaption}\item[{Mat}]{face\+In }\end{DoxyParamCaption})}
+
+
+
+Calculates the probability of mask compliance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em face\+In} & Input of face object/array, to be extracted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Value of mask probability as a float 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_mask_detector_8hpp}{Mask\+Detector.\+hpp}}\item 
+\mbox{\hyperlink{_mask_detector_8cpp}{Mask\+Detector.\+cpp}}\end{DoxyCompactItemize}

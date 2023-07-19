@@ -1,0 +1,99 @@
+\hypertarget{class_face_detector}{}\doxysection{Face\+Detector Class Reference}
+\label{class_face_detector}\index{FaceDetector@{FaceDetector}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_face_detector_ab7ecd6d1c9fe5d343fc4f7631467cb78}\label{class_face_detector_ab7ecd6d1c9fe5d343fc4f7631467cb78}} 
+{\bfseries Face\+Detector} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_face_detector}{Face\+Detector}} class, required as every instance needs to have a command to execute. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_face_detector_a3aa4f1c3b08ef02351ec458dd90b04e2}{$\sim$\+Face\+Detector}} ()
+\begin{DoxyCompactList}\small\item\em destroys \mbox{\hyperlink{class_face_detector}{Face\+Detector}}. \end{DoxyCompactList}\item 
+vector$<$ Rect $>$ \mbox{\hyperlink{class_face_detector_a49244feb24d3c4f8e69f77380e385c14}{get\+Faces}} (Mat image)
+\begin{DoxyCompactList}\small\item\em Gets all faces currently in frame and stores them in a vector array of rectangle objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_face_detector}{Face\+Detector}} $\ast$ \mbox{\hyperlink{class_face_detector_a3884fc6a3eefeb3785b8ddbacf000b0e}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Returns the singleton class object for \mbox{\hyperlink{class_face_detector}{Face\+Detector}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_face_detector}{Face\+Detector}} $\ast$ \mbox{\hyperlink{class_face_detector_a994fb3353914861002a73c3f80dcc1b4}{instance}} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_face_detector_a61ba9684bb1c50375f226e7bb78472f8}\label{class_face_detector_a61ba9684bb1c50375f226e7bb78472f8}} 
+void {\bfseries set\+Faces} (vector$<$ Rect $>$ faces\+Vec)
+\item 
+\mbox{\Hypertarget{class_face_detector_a2b61cf625a8ef7f041f63e80a3ffeca8}\label{class_face_detector_a2b61cf625a8ef7f041f63e80a3ffeca8}} 
+Mat {\bfseries process\+Mat} (Mat image\+To\+Resize)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_face_detector_a77adbd502f46a1f4780c758070d19338}\label{class_face_detector_a77adbd502f46a1f4780c758070d19338}} 
+Cascade\+Classifier {\bfseries face\+Cascade}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_face_detector_a3aa4f1c3b08ef02351ec458dd90b04e2}\label{class_face_detector_a3aa4f1c3b08ef02351ec458dd90b04e2}} 
+\index{FaceDetector@{FaceDetector}!````~FaceDetector@{$\sim$FaceDetector}}
+\index{````~FaceDetector@{$\sim$FaceDetector}!FaceDetector@{FaceDetector}}
+\doxysubsubsection{\texorpdfstring{$\sim$FaceDetector()}{~FaceDetector()}}
+{\footnotesize\ttfamily Face\+Detector\+::$\sim$\+Face\+Detector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destroys \mbox{\hyperlink{class_face_detector}{Face\+Detector}}. 
+
+this just destroys the face detector 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_face_detector_a49244feb24d3c4f8e69f77380e385c14}\label{class_face_detector_a49244feb24d3c4f8e69f77380e385c14}} 
+\index{FaceDetector@{FaceDetector}!getFaces@{getFaces}}
+\index{getFaces@{getFaces}!FaceDetector@{FaceDetector}}
+\doxysubsubsection{\texorpdfstring{getFaces()}{getFaces()}}
+{\footnotesize\ttfamily vector$<$ Rect $>$ Face\+Detector\+::get\+Faces (\begin{DoxyParamCaption}\item[{Mat}]{image }\end{DoxyParamCaption})}
+
+
+
+Gets all faces currently in frame and stores them in a vector array of rectangle objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & Image feed to analyze \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array of faces as a vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_face_detector_a3884fc6a3eefeb3785b8ddbacf000b0e}\label{class_face_detector_a3884fc6a3eefeb3785b8ddbacf000b0e}} 
+\index{FaceDetector@{FaceDetector}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!FaceDetector@{FaceDetector}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_face_detector}{Face\+Detector}} $\ast$ Face\+Detector\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the singleton class object for \mbox{\hyperlink{class_face_detector}{Face\+Detector}}. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_face_detector}{Face\+Detector}} Singleton 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_face_detector_a994fb3353914861002a73c3f80dcc1b4}\label{class_face_detector_a994fb3353914861002a73c3f80dcc1b4}} 
+\index{FaceDetector@{FaceDetector}!instance@{instance}}
+\index{instance@{instance}!FaceDetector@{FaceDetector}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_face_detector}{Face\+Detector}} $\ast$ Face\+Detector\+::instance = nullptr\hspace{0.3cm}{\ttfamily [static]}}
+
+-- Includes -- 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_face_detector_8hpp}{Face\+Detector.\+hpp}}\item 
+\mbox{\hyperlink{_face_detector_8cpp}{Face\+Detector.\+cpp}}\end{DoxyCompactItemize}

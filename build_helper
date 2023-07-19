@@ -1,0 +1,6 @@
+make clean
+qmake -o makefile BigBrother.pro
+qmake -spec macx-g++
+qmake && make
+
+qmake -spec macx-xcode

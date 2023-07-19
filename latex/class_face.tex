@@ -1,0 +1,159 @@
+\hypertarget{class_face}{}\doxysection{Face Class Reference}
+\label{class_face}\index{Face@{Face}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_face_a20c480d60f5a7008c188b4fb04d3b367}{Face}} (Mat image, Rect area)
+\begin{DoxyCompactList}\small\item\em Constructor for the face, as every instance needs to have a command to execute. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_face_a182c8c9ba652d46b01fdf6816cd65590}{$\sim$\+Face}} ()
+\begin{DoxyCompactList}\small\item\em destroys \mbox{\hyperlink{class_face}{Face}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_face_aa8c6c53c8166ecfe5d3311e64a63282e}{detect\+Mask}} ()
+\begin{DoxyCompactList}\small\item\em Defines how to detect mask compliance. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_face_af55e5a325f85ceeae78f65e5d7233c3d}{get\+Probability\+Of\+Mask}} ()
+\begin{DoxyCompactList}\small\item\em Captures the probability of whether a mask is being worn, converted to an integer. \end{DoxyCompactList}\item 
+Rect \mbox{\hyperlink{class_face_a9acc9c2f1886a1e05f20b8241cedc209}{get\+Area}} ()
+\item 
+Range \mbox{\hyperlink{class_face_a658818880f8865724ad0a8b0b160bd68}{get\+Cols}} ()
+\item 
+Range \mbox{\hyperlink{class_face_a800d572fc20397da42be5bf2782f8b80}{get\+Rows}} ()
+\item 
+Point \mbox{\hyperlink{class_face_aad50d90a5e67021a730e2f1344dd2adb}{get\+Top\+Left\+Point}} ()
+\item 
+Point \mbox{\hyperlink{class_face_a85ff68a101902cec0db9528c9590d2e6}{get\+Bottom\+Right\+Point}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_face_a4026b67d798984c04da1225ec45dd62e}\label{class_face_a4026b67d798984c04da1225ec45dd62e}} 
+Mat {\bfseries face\+Image}
+\item 
+\mbox{\Hypertarget{class_face_a146f78edea68f578d5d580e6658ebe69}\label{class_face_a146f78edea68f578d5d580e6658ebe69}} 
+Rect {\bfseries area}
+\item 
+\mbox{\Hypertarget{class_face_a6d2e4d42286763b085146dbac627483e}\label{class_face_a6d2e4d42286763b085146dbac627483e}} 
+Range {\bfseries cols}
+\item 
+\mbox{\Hypertarget{class_face_a8d1e5906ee8b1298a48dc8f8afe25bfe}\label{class_face_a8d1e5906ee8b1298a48dc8f8afe25bfe}} 
+Range {\bfseries rows}
+\item 
+\mbox{\Hypertarget{class_face_a441b89236e00c26c5814b218637515b4}\label{class_face_a441b89236e00c26c5814b218637515b4}} 
+Point {\bfseries top\+Left\+Point}
+\item 
+\mbox{\Hypertarget{class_face_ab65ce8cd0e0cd231f73bf43eb54b78dc}\label{class_face_ab65ce8cd0e0cd231f73bf43eb54b78dc}} 
+Point {\bfseries bottom\+Right\+Point}
+\item 
+\mbox{\Hypertarget{class_face_abd1a59f31f80349c7bfe211dbdb76278}\label{class_face_abd1a59f31f80349c7bfe211dbdb76278}} 
+float {\bfseries mask\+Prob}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_face_a20c480d60f5a7008c188b4fb04d3b367}\label{class_face_a20c480d60f5a7008c188b4fb04d3b367}} 
+\index{Face@{Face}!Face@{Face}}
+\index{Face@{Face}!Face@{Face}}
+\doxysubsubsection{\texorpdfstring{Face()}{Face()}}
+{\footnotesize\ttfamily Face\+::\+Face (\begin{DoxyParamCaption}\item[{Mat}]{image,  }\item[{Rect}]{area }\end{DoxyParamCaption})}
+
+
+
+Constructor for the face, as every instance needs to have a command to execute. 
+
+-- Includes --
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & Feed in the image as a matrix of pixel data \\
+\hline
+{\em area} & Importing a pre-\/defined area as a rectange \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_face_a182c8c9ba652d46b01fdf6816cd65590}\label{class_face_a182c8c9ba652d46b01fdf6816cd65590}} 
+\index{Face@{Face}!````~Face@{$\sim$Face}}
+\index{````~Face@{$\sim$Face}!Face@{Face}}
+\doxysubsubsection{\texorpdfstring{$\sim$Face()}{~Face()}}
+{\footnotesize\ttfamily Face\+::$\sim$\+Face (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destroys \mbox{\hyperlink{class_face}{Face}}. 
+
+this just destroys the \mbox{\hyperlink{class_face}{Face}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_face_aa8c6c53c8166ecfe5d3311e64a63282e}\label{class_face_aa8c6c53c8166ecfe5d3311e64a63282e}} 
+\index{Face@{Face}!detectMask@{detectMask}}
+\index{detectMask@{detectMask}!Face@{Face}}
+\doxysubsubsection{\texorpdfstring{detectMask()}{detectMask()}}
+{\footnotesize\ttfamily bool Face\+::detect\+Mask (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Defines how to detect mask compliance. 
+
+\begin{DoxyReturn}{Returns}
+Boolean value determining whether mask is worn 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_face_a9acc9c2f1886a1e05f20b8241cedc209}\label{class_face_a9acc9c2f1886a1e05f20b8241cedc209}} 
+\index{Face@{Face}!getArea@{getArea}}
+\index{getArea@{getArea}!Face@{Face}}
+\doxysubsubsection{\texorpdfstring{getArea()}{getArea()}}
+{\footnotesize\ttfamily Rect Face\+::get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The area as a rectange object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_face_a85ff68a101902cec0db9528c9590d2e6}\label{class_face_a85ff68a101902cec0db9528c9590d2e6}} 
+\index{Face@{Face}!getBottomRightPoint@{getBottomRightPoint}}
+\index{getBottomRightPoint@{getBottomRightPoint}!Face@{Face}}
+\doxysubsubsection{\texorpdfstring{getBottomRightPoint()}{getBottomRightPoint()}}
+{\footnotesize\ttfamily Point Face\+::get\+Bottom\+Right\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The bottom right of the rectange as a point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_face_a658818880f8865724ad0a8b0b160bd68}\label{class_face_a658818880f8865724ad0a8b0b160bd68}} 
+\index{Face@{Face}!getCols@{getCols}}
+\index{getCols@{getCols}!Face@{Face}}
+\doxysubsubsection{\texorpdfstring{getCols()}{getCols()}}
+{\footnotesize\ttfamily Range Face\+::get\+Cols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The number of columns as a range object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_face_af55e5a325f85ceeae78f65e5d7233c3d}\label{class_face_af55e5a325f85ceeae78f65e5d7233c3d}} 
+\index{Face@{Face}!getProbabilityOfMask@{getProbabilityOfMask}}
+\index{getProbabilityOfMask@{getProbabilityOfMask}!Face@{Face}}
+\doxysubsubsection{\texorpdfstring{getProbabilityOfMask()}{getProbabilityOfMask()}}
+{\footnotesize\ttfamily int Face\+::get\+Probability\+Of\+Mask (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Captures the probability of whether a mask is being worn, converted to an integer. 
+
+\begin{DoxyReturn}{Returns}
+Integer mask probability 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_face_a800d572fc20397da42be5bf2782f8b80}\label{class_face_a800d572fc20397da42be5bf2782f8b80}} 
+\index{Face@{Face}!getRows@{getRows}}
+\index{getRows@{getRows}!Face@{Face}}
+\doxysubsubsection{\texorpdfstring{getRows()}{getRows()}}
+{\footnotesize\ttfamily Range Face\+::get\+Rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The number of rows as a range object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_face_aad50d90a5e67021a730e2f1344dd2adb}\label{class_face_aad50d90a5e67021a730e2f1344dd2adb}} 
+\index{Face@{Face}!getTopLeftPoint@{getTopLeftPoint}}
+\index{getTopLeftPoint@{getTopLeftPoint}!Face@{Face}}
+\doxysubsubsection{\texorpdfstring{getTopLeftPoint()}{getTopLeftPoint()}}
+{\footnotesize\ttfamily Point Face\+::get\+Top\+Left\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The top left of the rectange as a point 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_face_8hpp}{Face.\+hpp}}\item 
+\mbox{\hyperlink{_face_8cpp}{Face.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,51 @@
+\hypertarget{_face_8hpp_source}{}\doxysection{Face.\+hpp}
+\mbox{\hyperlink{_face_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef Face\_hpp}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define Face\_hpp}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{opencv_8hpp}{opencv.hpp}}"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{environment_8hpp}{environment.hpp}}"{}}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_mask_detector_8hpp}{MaskDetector.hpp}}"{}}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{using namespace }cv;}
+\DoxyCodeLine{19 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{class }\mbox{\hyperlink{class_face}{Face}}}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23     }
+\DoxyCodeLine{24 \textcolor{keyword}{private}:}
+\DoxyCodeLine{25     \textcolor{comment}{// user entered command}}
+\DoxyCodeLine{26     Mat faceImage;}
+\DoxyCodeLine{27     Rect area;}
+\DoxyCodeLine{28     Range cols;}
+\DoxyCodeLine{29     Range rows;}
+\DoxyCodeLine{30     Point topLeftPoint;}
+\DoxyCodeLine{31     Point bottomRightPoint;}
+\DoxyCodeLine{32     \textcolor{keywordtype}{float} maskProb;}
+\DoxyCodeLine{33     }
+\DoxyCodeLine{34 \textcolor{keyword}{public}:}
+\DoxyCodeLine{35     \textcolor{comment}{// constructor}}
+\DoxyCodeLine{36     \mbox{\hyperlink{class_face_a20c480d60f5a7008c188b4fb04d3b367}{Face}}(Mat image, Rect area);}
+\DoxyCodeLine{37     \textcolor{comment}{// destructor}}
+\DoxyCodeLine{38     \mbox{\hyperlink{class_face_a182c8c9ba652d46b01fdf6816cd65590}{\string~Face}}();}
+\DoxyCodeLine{39     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_face_aa8c6c53c8166ecfe5d3311e64a63282e}{detectMask}}();}
+\DoxyCodeLine{40     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_face_af55e5a325f85ceeae78f65e5d7233c3d}{getProbabilityOfMask}}();}
+\DoxyCodeLine{41     }
+\DoxyCodeLine{42     \textcolor{comment}{// getters}}
+\DoxyCodeLine{43     Rect \mbox{\hyperlink{class_face_a9acc9c2f1886a1e05f20b8241cedc209}{getArea}}();}
+\DoxyCodeLine{44     Range \mbox{\hyperlink{class_face_a658818880f8865724ad0a8b0b160bd68}{getCols}}();}
+\DoxyCodeLine{45     Range \mbox{\hyperlink{class_face_a800d572fc20397da42be5bf2782f8b80}{getRows}}();}
+\DoxyCodeLine{46     Point \mbox{\hyperlink{class_face_aad50d90a5e67021a730e2f1344dd2adb}{getTopLeftPoint}}();}
+\DoxyCodeLine{47     Point \mbox{\hyperlink{class_face_a85ff68a101902cec0db9528c9590d2e6}{getBottomRightPoint}}();}
+\DoxyCodeLine{48     }
+\DoxyCodeLine{49 \};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* Face\_hpp */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

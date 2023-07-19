@@ -1,0 +1,81 @@
+\hypertarget{mainwindow_8hpp_source}{}\doxysection{mainwindow.\+hpp}
+\mbox{\hyperlink{mainwindow_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef MAINWINDOW\_H}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define MAINWINDOW\_H}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QObject>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QPushButton>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <QLabel>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <QGraphicsView>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <QWidget>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <QGridLayout>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <QTextEdit>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <QStackedWidget>}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <QRadioButton>}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <QListWidget>}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include <QComboBox>}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include <QTimer>}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include <QMessageBox>}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#include <QSlider>}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#include <QDoubleSpinBox>}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#include <time.h>}}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{opencv_8hpp}{opencv.hpp}}"{}}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{environment_8hpp}{environment.hpp}}"{}}}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_face_8hpp}{Face.hpp}}"{}}}
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_face_detector_8hpp}{FaceDetector.hpp}}"{}}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_report_8hpp}{Report.hpp}}"{}}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{keyword}{namespace }Ui \{}
+\DoxyCodeLine{36     \textcolor{keyword}{class }\mbox{\hyperlink{class_main_window}{MainWindow}};}
+\DoxyCodeLine{37 \}}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{keyword}{class }\mbox{\hyperlink{class_main_window}{MainWindow}} : \textcolor{keyword}{public} QWidget}
+\DoxyCodeLine{40 \{}
+\DoxyCodeLine{41     Q\_OBJECT}
+\DoxyCodeLine{42 \textcolor{keyword}{public}:}
+\DoxyCodeLine{43     \mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{MainWindow}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{46     \textcolor{comment}{// button clicks}}
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a1268b155f410b35c4367d40bc69f4e7a}{pauseClicked}}();}
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a30d8134a2eb04dc6e38807719500bc3c}{recordClicked}}();}
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a2b1bfa8bd841a93fb64fbff623dc86d1}{exportClicked}}();}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{comment}{// zoom slider changed}}
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a55f544090cd7d109270585593fdb7044}{sliderChanged}}(\textcolor{keywordtype}{int} value);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     \textcolor{comment}{// sensitivity updated}}
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a8ddee4491adb18679b6ccbf4df9f12c8}{sensitivityChanged}}(\textcolor{keywordtype}{double} value);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \textcolor{keyword}{private}:}
+\DoxyCodeLine{58     \textcolor{comment}{// utilities}}
+\DoxyCodeLine{59     QTimer *timer;}
+\DoxyCodeLine{60     QGridLayout *mainLayout;}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \textcolor{comment}{// labels}}
+\DoxyCodeLine{63     QLabel *liveFeedLabel;}
+\DoxyCodeLine{64     QLabel *statisticsLabel;}
+\DoxyCodeLine{65     QLabel *complianceLabel;}
+\DoxyCodeLine{66     QLabel *peopleLabel;}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68     QLabel *controlsLabel;}
+\DoxyCodeLine{69     QLabel *zoomLabel;}
+\DoxyCodeLine{70     QLabel *sensitivityLabel;}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72     QPushButton *pauseButton;}
+\DoxyCodeLine{73     QPushButton *recordButton;}
+\DoxyCodeLine{74     QPushButton *exportButton;}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76     QSlider *zoomSlider;}
+\DoxyCodeLine{77     QDoubleSpinBox *sensitivityInput;}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79     std::string outputLocation;}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81 \};}
+\DoxyCodeLine{82 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// MAINWINDOW\_H}}
+
+\end{DoxyCode}

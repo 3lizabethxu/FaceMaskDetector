@@ -1,0 +1,49 @@
+\hypertarget{_face_detector_8hpp_source}{}\doxysection{Face\+Detector.\+hpp}
+\mbox{\hyperlink{_face_detector_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef FaceDetector\_hpp}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define FaceDetector\_hpp}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{environment_8hpp}{environment.hpp}}"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{opencv_8hpp}{opencv.hpp}}"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_mask_detector_8hpp}{MaskDetector.hpp}}"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{using namespace }cv;}
+\DoxyCodeLine{18 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{class }\mbox{\hyperlink{class_face_detector}{FaceDetector}}}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22     }
+\DoxyCodeLine{23 \textcolor{keyword}{private}:}
+\DoxyCodeLine{24     }
+\DoxyCodeLine{25     \textcolor{comment}{// helper to store the faces that were detected}}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} setFaces(vector<Rect> facesVec);}
+\DoxyCodeLine{27     \textcolor{comment}{// store our face classifier}}
+\DoxyCodeLine{28     CascadeClassifier faceCascade;}
+\DoxyCodeLine{29     \textcolor{comment}{// helper func to resize frames}}
+\DoxyCodeLine{30     Mat processMat(Mat imageToResize);}
+\DoxyCodeLine{31     }
+\DoxyCodeLine{32 \textcolor{keyword}{public}:}
+\DoxyCodeLine{33     \textcolor{keyword}{static} \mbox{\hyperlink{class_face_detector}{FaceDetector}} *\mbox{\hyperlink{class_face_detector_a994fb3353914861002a73c3f80dcc1b4}{instance}};}
+\DoxyCodeLine{34     }
+\DoxyCodeLine{35     \textcolor{comment}{// constructor}}
+\DoxyCodeLine{36     \mbox{\hyperlink{class_face_detector_ab7ecd6d1c9fe5d343fc4f7631467cb78}{FaceDetector}}();}
+\DoxyCodeLine{37     \textcolor{comment}{// destructor}}
+\DoxyCodeLine{38     \mbox{\hyperlink{class_face_detector_a3aa4f1c3b08ef02351ec458dd90b04e2}{\string~FaceDetector}}();}
+\DoxyCodeLine{39     }
+\DoxyCodeLine{40     \textcolor{comment}{// singleton getter}}
+\DoxyCodeLine{41     \textcolor{keyword}{static} \mbox{\hyperlink{class_face_detector}{FaceDetector}} *\mbox{\hyperlink{class_face_detector_a3884fc6a3eefeb3785b8ddbacf000b0e}{getInstance}}();}
+\DoxyCodeLine{42     }
+\DoxyCodeLine{43     \textcolor{comment}{// get the faces in the current image}}
+\DoxyCodeLine{44     vector<Rect> \mbox{\hyperlink{class_face_detector_a49244feb24d3c4f8e69f77380e385c14}{getFaces}}(Mat image);}
+\DoxyCodeLine{45     }
+\DoxyCodeLine{46 \};}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* FaceDetector\_hpp */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{49 }
+
+\end{DoxyCode}
